@@ -1,0 +1,18 @@
+CREATE TABLE entries (
+	id INTEGER NOT NULL, 
+	week_id INTEGER, 
+	date DATETIME, 
+	text TEXT, 
+	tags VARCHAR(128), 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(week_id) REFERENCES weeks (id)
+);
+CREATE TABLE weeks (
+	id INTEGER NOT NULL, 
+	start_date DATETIME, 
+	end_date DATETIME, week_id INTEGER, 
+	PRIMARY KEY (id), 
+	UNIQUE (start_date), 
+	UNIQUE (end_date)
+);
+CREATE INDEX idx_weekid on weeks (week_id);

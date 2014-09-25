@@ -1,0 +1,109 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+#main {
+    margin-top: 5em;
+}
+
+#main dl {
+    margin-top: 0.5em;
+    border-radius: 0.3em;
+    border: 2px solid #ccc;
+    padding: 1em;
+}
+
+#main dd.tag:hover:before {
+       /*content: "  \2702  ";*/
+     /*content: "\00a0 \2717 \00a0";*/
+
+}
+
+.save-model {
+    font-size: 1.5em;
+    position: relative;
+    top: -0.75em;
+    left: 0;
+    cursor: pointer;
+    color: green;
+}
+
+#main .delete-model {
+    font-size: 1.5em;
+    position: relative;
+    top: -0.75em;
+    left; 0.3em;
+    cursor: pointer;
+}
+
+/* this might be a bad idea to include fonts locally */
+/* we should rather directly link from openfonts */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Raleway SemiBold'), local('Raleway-SemiBold'),
+  url(/static/css/raleway/xkvoNo9fC8O2RDydKj12bwzyDMXhdD8sAj6OAJTFsBI.woff2) format('woff2'),
+  url(/static/css/raleway/xkvoNo9fC8O2RDydKj12b73hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Raleway Bold'), local('Raleway-Bold'), url(/static/css/raleway/JbtMzqLaYbbbCL9X6EvaIwzyDMXhdD8sAj6OAJTFsBI.woff2) format('woff2'),
+  url(/static/css/raleway/JbtMzqLaYbbbCL9X6EvaI73hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+}
+
+dd.tag {
+    font-weight: 700;
+    font-family: Raleway, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+dd.text {
+    font-weight: 600;
+    font-family: Raleway, 'Helvetica Neue', Helvetica, sans-serif;
+    /* space between tag and text */
+    margin-bottom: 0.5em;
+}
+
+.record {
+  margin-left: 2em;
+}
+
+.record span {
+  margin-left: 2em;
+}
+
+.entry {
+    padding-bottom: 1em;
+    border-bottom: 1px solid #ccc;
+}
+
+.entry > h4 {
+  font-variant: small-caps;
+  font-family: Raleway, 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.entry h4, .entry h5 {
+  font-variant: small-caps;
+}
+
+ul.history  span.badge {
+  background-color: #23AAC8;
+  font-size: 1.05em;
+}
+ul.history > li {
+  margin-top: 0.3em;
+}
+
+div.navbar-header a.navbar-brand {
+  text-shadow: cyan 0.2em 0.1em 0.5em;
+  color: cyan;
+}
+
+ul.nav li.active a {
+  text-shadow: white 0.2em 0.1em 0.4em;
+}
+
