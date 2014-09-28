@@ -1,17 +1,19 @@
-A simple weekly status report tracker.
+# A simple weekly status report tracker
 
-Dependencies
-----
-python
-flask
-flask-sqlalchemy
+## Dependencies
+* python 2.7+
+* flask  >= 0.10
+* flask-sqlalchemy >= 0.10
 
-Installation instructions
------
+## Installation instructions
 1. Ensure you have the python modules flask and flask-sqlalchemy installed
 2. check out the repo
 3. initialize the db using db.schema at root
-  `cat db.schema | sqlite3 src/reports.db`
+  ```bash
+  cat db.schema | sqlite3 src/reports.db
+  ```
 4. Run the server using manage.py under src
-  `python ./manage.py runserver`
+  ```bash
+  python ./manage.py runserver
+  ```
 5. Access the tool via browser. Link will be displayed at the prompt.
