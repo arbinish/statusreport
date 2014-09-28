@@ -9,10 +9,12 @@
 1. Ensure you have the python modules flask and flask-sqlalchemy installed
 2. check out the repo
 3. initialize the db using db.schema at root
+
   ```bash
   cat db.schema | sqlite3 src/reports.db
   ```
 4. Run the server using manage.py under src
+
   ```bash
   python ./manage.py runserver
   ```
