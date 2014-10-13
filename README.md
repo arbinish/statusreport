@@ -13,9 +13,13 @@
   ```bash
   cat db.schema | sqlite3 src/reports.db
   ```
-4. Run the server using manage.py under src
+4. Run the server using main.py under src
 
   ```bash
-  python ./manage.py runserver
+  cd src; python ./main.py 
   ```
 5. Access the tool via browser. Link will be displayed at the prompt.
+
+  ```bash
+  http://0.0.0.0:9887/
+  ```
